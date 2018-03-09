@@ -1,0 +1,533 @@
+/* Styling for html tag */
+html {
+   position: relative;
+   min-height: 100%;
+}
+/* Sets default margins to none */
+body {
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+/* navigation bar */
+nav {
+	background: white;
+	right: 0;
+    left: 0;
+    z-index: 1030;
+	padding: 8px 20px;
+}
+* {
+    box-sizing: border-box;
+}
+/* Default color and size for all header classes */
+.header {
+    border: 1px solid red;
+    padding: 15px;
+}
+/* The default styling for all col classes*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: none;
+}
+/* List styling */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+/* Link styling */
+a {
+	text-decoration: none;
+}
+/* List styling */
+li {
+    float: left;
+}
+/* Link text styling */ 
+li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+	list-style-type: none;
+}
+/* Link text hover styling */
+a:hover{
+    color: #C7B71B;
+}
+/* active class for navbar */
+.active {
+   color: transparent;
+}
+/* default button class*/
+.btn {
+	padding: 15px;
+	padding-right:50px;
+	padding-left:50px;
+	color: #fff; 
+	background: transparent;
+	border: #333 1px solid;
+	color: #333;
+	margin-bottom: 3px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.btn:hover
+{
+	background-color: #333;
+	color: white;
+}
+/* Home Page button class*/
+.btnHome {
+	padding: 10px;
+	color: #fff; 
+	background: white;
+	color: #333;
+	margin-bottom: 3px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.btnHome:hover
+{
+	background-color: #C7B71B;
+	color: white;
+}
+/* */
+.floating-box {
+    float: left;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid #73AD21;  
+}
+/* Hero Image for home page junbotron */
+.hero-image {
+  background-image: url("static/poolDay.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  background-position: 50% 50% !important;
+}
+/* text styling for jumbotron */
+.hero-text {
+  position: absolute;
+  color: white;
+  text-align: left;
+  float: right !important;
+  margin-top: 120px;
+  margin-left: 60px;
+}
+/* default width for columns/grids*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* text content in home page */
+.side-para {
+	font-size: 20px; 
+}
+/* default styling for number type inputs */
+input[type=number] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 18px 0;
+    box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+	border: none;
+	font-size: 15px;
+	width: 50%;
+	border: 1px solid black;
+}
+/* default styling for text type inputs */
+input[type=text] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 18px 0;
+    box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+	border: none;
+	font-size: 15px;
+	width: 50%;
+	border: 1px solid black;
+}
+/* default styling for the select tags*/
+select {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 18px 0;
+    box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+	border: none;
+	font-size: 15px;
+	width: 50%;
+	border: 1px solid black;
+}
+/* Default styling for email type input*/
+input[type=email] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 18px 0;
+    box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+	border: none;
+	font-size: 15px;
+	width: 50%;
+	border: 1px solid black;
+}
+/* Default styling for password type input*/
+input[type=password] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 18px 0;
+    box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+	border: none;
+	font-size: 15px;
+	width: 50%;
+	border: 1px solid black;
+}
+/* Default styling for date type inputs */
+input[type=date] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 18px 0;
+    box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+	border: none;
+	font-size: 15px;
+	width: 50%;
+	border: 1px solid black;
+}
+/* Default styling for submit tyoe inputs */
+input[type=submit] { 
+	font-family:'Josefin Sans', sans-serif;
+	cursor: pointer;
+}
+/* Default styling for button type inputs*/
+input[type=button] { 
+	font-family:'Josefin Sans', sans-serif;
+	padding: 15px 20px; 
+	background: white;
+	border: none; 
+	font-size: 16px;
+	color: #333;
+}
+/* Default styling for h2 tag*/
+h2 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 30px;
+}
+/* styling for container class */
+.container {
+	text-align: center;
+
+}
+/* styling for layer id*/
+#layer {
+	margin-top: 80px;
+}
+#layer2 {
+	margin-top: 80px;
+}
+/* Styling for png logo */
+.aruba-logo {
+	height: 44px; 
+	width: 300px;
+}
+form group {
+	display: inline;
+}	
+/* Default styling for textarea */	
+textarea {
+    width: 50%;
+	resize: vertical; 
+	border: 1px solid black;
+	padding: 10px 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 14px;
+}
+/* styling for gallery class in div tag */
+div.gallery {
+    margin: 5px;
+    float: right;
+    width: 300px;
+}
+/* styling for image in gallery class in div tag */
+div.gallery img {
+    width: 100%;
+    height: 100%;
+}
+/* styling for description in gallery class in div tag */
+.img_description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(40, 40, 40, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect */
+  transition: opacity .2s, visibility .2s;
+}
+/* styling for img description hover */
+.img_wrap:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+}
+/* Styling for image in gallery*/
+.img_wrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+/* image description margin styling */
+.img-desc-txt {
+  margin: 40px;
+}
+/* Styling for footer class */
+.footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 4em;
+	background: white;
+	text-align: center !important;
+	padding-top: 25px;
+	color: #333;
+	-webkit-box-shadow: 0px -4px 2px rgba(50, 50, 50, 0.1);
+    -moz-box-shadow:    0px -4px 2px rgba(50, 50, 50, 0.1);
+    box-shadow:         0px -4px 2px rgba(50, 50, 50, 0.1);
+	text-decoration: none !important;
+}
+/* Styling for image transitions in gallery jumbotron */
+.mySlides {
+	object-fit: cover;
+}
+/* Footer link seperators */
+.footer-c{
+	padding: 20px;
+	color: #fff !important;
+}
+/*container in gallery*/
+.g-container {
+	margin-left: 200px; 
+	margin-right: 200px; 
+}
+
+/*Styling for btn in bookings page*/
+.booking-btn {
+	padding: 20px 30px;
+	background-color: #333; 
+	color: white; 
+	font-size:20px;
+	border: solid #333 1px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+.booking-btn:hover{
+	border : 1px solid white;
+
+}
+/*Styling for table*/
+table {
+   text-align: center;
+   padding: 5px;
+   width: 100%;
+   border-radius: 3px;
+   margin-right: 30px;
+}
+/*Styling for table data*/
+td {
+	border: 1px solid #717171;
+	padding: 10px;
+	background: #f6f6f6; 
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4);/* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: none;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.2s;
+}
+
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: #333;
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+}
+/* Styling for modal when hovered over */
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Styling for modal header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #fff;
+    color: #333;
+}
+/* Styling for modal body*/
+.modal-body {padding: 2px 16px;}
+
+/* Styling for modal footer*/
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #333;
+    color: white;
+}
+/* Container for the modal */
+.mod-contain {
+	margin-left: 200px;
+	margin-right: 200px;
+}
+/* Styling for login input */
+.login-input {
+	width: 100% !important;
+}
+/* Styling for navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 12px 15px;
+}
+/* Styling for navigation bar text attributes */
+.topnav a {
+  float: right;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+/* Styling for navigation bar icon to not display */
+.topnav .icon {
+  display: none;
+}
+/*QuickNav*/
+.quicknav{
+	text-align: center;
+	padding: 10px 25px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #60677c;
+}
+/*Styling for indiviual options */
+.quicknavoptions{
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 15px;
+	color: white;
+	padding-left:30px;
+}
+.quicknavoptions:hover{
+	color: #C7B71B;
+}
+/*Review introduction */
+.review{
+	text-align:center;
+	font-size: 50px;
+	color: #333;
+	width: 100%;
+	height:60%;
+	padding:100px;
+}
+/* Styling for navigation bar icon for mobile screens at max width 760px */
+@media screen and (max-width: 760px) {
+  .topnav a:not(:nth-child(0)) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* Styling for navigation bar for mobile screens at max width 760px */
+@media screen and (max-width: 760px) {
+  .topnav.responsive {position: relative; padding: 80px 80px 20px 0px;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+/* Styling for attributes and tags for mobile screens at max width 760px */
+@media screen and (max-width: 760px) {
+  .modal-content {width: 80%;}
+  input[type=text]  {width: 80%;}
+  input[type=date]  {width: 80%;}
+  input[type=email]  {width: 80%;}
+  input[type=number]  {width: 80%;}
+  textarea  {width: 80%;}
+  select  {width: 80%;}
+  td {padding: 7px 1px;}
+  .hero-text {
+    position: absolute;
+    color: white;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 0px;
+	margin-right: 10px;}
+	
+}
+  
+@media screen and (max-width: 800px) {
+	.col-6 {width: 100%; margin-top: 10px;}
+	.review{
+		font-size:50px;
+	}
+  }

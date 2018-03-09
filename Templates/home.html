@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,300i,400,400i,600,600i,700i" rel="stylesheet">
+	<link rel="stylesheet" href="static/hotelWebsiteCSS.css">
+	<title>Aruba | Welcome </title>
+		<!-- Styling for hero -->
+		<style>
+		.hero-image {
+			background-image: url("static/poolDay.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+			width: 100%;
+			height: 550px;
+			background-position: 50% 50% !important;
+			object-fit: cover;
+		}
+		</style>
+</head>
+<body>
+
+
+<!--  Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+    </div>
+    <div class="modal-body">
+	<form>
+	<!-- Login form -->
+		<input class="login-input" type = "email" name = "Email" placeholder ="Email Address"/> 
+		<br>
+		<input class="login-input" type = "password" name = "Password" placeholder ="Password"/> 
+	</form>
+    </div>	
+    <div style="text-align: center;" class="modal-footer">
+	<!--- submit button for login -->
+      <input class="booking-btn" type = "submit" value = "Log In" >
+    </div>
+  </div>
+</div>
+
+<!-- Navigation Bar starts here-->
+<div>
+	<!-- Aruba logo / website logo-->
+	<a href="/"><img style="margin-top: 18px; float: left !important; height: 27px; width: 75px; margin-left: 20px;" src="static/aruba-logo.png" alt = "Aruba Logo"></a>
+		<div class="topnav" id="myTopnav">
+			<!-- when clicked, activates login form modal -->
+			<a class="btn" id="myBtn" href="#">Log In</a>
+			<a href="location">Location</a>
+			<a href="reviews">Reviews</a>
+			<a href="booking"> Make Booking</a>
+			<a href="rooms">Our Villas</a>
+			<a href="gallery">Gallery</a>
+			<!-- Navigation icon -->
+			<a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+</div>
+<!-- navigation bar ends here -->
+
+<!-- Hero/jumbotron with image and text -->
+<div>
+	<div class="hero-image">
+		<div class="col-6">
+			<div class="hero-text">
+				<h1 style="font-size:50px">Barefoot Luxury</h1>
+				<p>
+					Aruba has been built over the past 8 years as a family home away from home; <br> a place to escape the realities of hectic lives in big cities. <br>
+					It’s a place designed to allow you to feel the comfort of home while receiving the <br>attentive service of a family who cares, without the emotional attachment. </p>
+				<a class="btnHome" id="bookingBtn" href="booking">Go to Booking</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Hero ends here -->
+
+
+<!-- Marketing content #1 -->
+<div class="container" id="layer">
+	<h2>A haven of relaxation</h2>
+		<div style="" class="col-6 side-para">
+			<p style="margin-left: 30px; text-align: left;">Because Aruba is located in the center of San Francisco's most cosmopolitan neighbourhood, there are facilities close by.<br><br>
+			Aruba partners with Cocoon Medi-spa for treatments, which you can combine with an in-villa juice detox or with Vin+ if wine is more your kind of wind down. We extend membership to the Canggu Club for tennis, sports, gym workouts and water-slide action for the kids. 
+			There’s the surf-school on the beach that’s a 2 minute walk away and then of course all the cafes, restaurants, bars and shopping of East Street. The car waits for your call to drop you in the thick of it.<br><br>
+			Of course, our front desk offers concierge services too in the case you’d like to explore San Francisco's rich cultural heritage or simply experience the great natural beauty of the city, perhaps with a hit of adrenaline to boot. If you’re keen to stay all day at the villa, our Butlers can arrange all manner of special treats from a flower filled bath and breakfast in bed to a BBQ. When and how you want it. Just talk to us.</p>
+		</div>
+		<div class="col-6">
+			<img style="width: 90%;" src="static/yoga.jpg" alt = "Yoga" >
+		</div>
+</div>
+<Br>
+<!-- Marketing Content #1 ends here -->
+
+<!-- Marketing Content #2 -->
+<div class="container" id="layer2">
+	<div class="col-6">
+		<img style="width: 90%;" src="static/poolNight.jpg" alt ="Pool Night" >
+	</div>
+	<div style="" class="col-6 side-para">
+		<p style="margin-left: 30px; text-align: left;">Aruba Villas have been built over the past 8 years as a family home away from home; 
+		a place to escape the realities of hectic lives in big cities. It’s a place designed to allow you to feel the comfort of home while receiving the attentive service of a family who cares, without the emotional attachment. It could only be in San Francisco.<br><br>
+		Services offered facilitate rest, relaxation and rejuvenation in no particular order or prescription. This is not a hotel with villas; this is a private villa with services offered within the private compound. If you want a massage, it’s in your villa. Meals, cooked by our chef in the villa kitchen. Yoga, Pilates and martial arts sessions, offered in the garden. <br><br>
+		Babysitting? Again, in the villa, allowing you to spend time with your children without playing the security role all day. If you fancy cooking for yourself, groceries can be ordered in and delivered quickly, and of course your laundry is taken care of too. The aim at Aruba is to make your holiday all about you. 
+		When and how you want it.</p>
+	</div>
+</div>
+<!-- Marketing content #2 ends here-->
+
+<!-- Footer at the bottom of the page -->
+<div>
+	<div class="footer">
+		<span class="footer-c"><a href="gallery">Gallery</a></span>
+		<span class="footer-c"><a href="rooms"> Villas</a></span>
+		<span class="footer-c"><a href="booking">Make Booking</a></span>
+		<span class="footer-c"><a href="reviews">Reviews</a></span>
+		<span class="footer-c"><a href="location">Location</a></span>
+	</div>
+</div>
+<!-- Footer ends here -->
+
+
+<!-- JavaScript -->
+
+<!-- Responsive Nav for mobile devices -->
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

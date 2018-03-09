@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>  
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,300i,400,400i,600,600i,700i" rel="stylesheet">
+	<link rel="stylesheet" href="static/hotelWebsiteCSS.css">
+	<title>Aruba | Where we are </title>
+</head>
+
+
+<body>
+
+<!--  Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+    </div>
+    <div class="modal-body">
+	<form>
+	<!-- Login form -->
+		<input class="login-input" type = "email" name = "Email" placeholder ="Email Address"/> 
+		<br>
+		<input class="login-input" type = "password" name = "Password" placeholder ="Password"/> 
+	</form>
+    </div>
+    <div style="text-align: center;" class="modal-footer">
+	<!--- submit button for login -->
+      <input class="booking-btn" type = "submit" value = "Log In" >
+    </div>
+  </div>
+</div>
+
+<!-- Navigation Bar starts here-->
+<div>
+	<!-- Aruba logo / website logo-->
+	<a href="/"><img style="margin-top: 18px; float: left !important; height: 27px; width: 75px; margin-left: 20px;" src="static/aruba-logo.png" alt = "Aruba Logo"></a>
+	<div class="topnav" id="myTopnav">
+		<!-- when clicked, activates login form modal -->
+		<a class="btn" id="myBtn" href="#">Log In</a>
+		<a href="location">Location</a>
+		<a href="reviews">Reviews</a>
+		<a href="booking"> Make Booking</a>
+		<a href="rooms">Our Villas</a>
+		<a href="gallery">Gallery</a>
+		<!-- Navigation icon -->
+		<a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+</div>
+<!-- navigation bar ends here -->
+
+
+<!-- Google maps api that displays our location -->
+	<div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.049201044528!2d-122.48920349265475!3d37.78888670800863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858701df364a25%3A0xd9d3bf9a1a9b4cee!2s190+Sea+Cliff+Ave%2C+San+Francisco%2C+CA+94121%2C+USA!5e0!3m2!1sen!2suk!4v1512497890131" width="2000" height="450" style="border:0" allowfullscreen></iframe>
+	</div>
+		
+
+   <!-- Contact Us information -->
+<div class="col-6">
+  <h2>Contact Us</h2>
+  <h3>190 Sea Cliff Avenue,<br> San Francisco, <br>CA 94121, USA</h3>
+  <h3>Phone Number: 555-678-984</h3>
+  <h3>Email: info@aruba.com</h3>
+</div>
+
+<!-- Location notes -->  
+<div class="col-6">
+  <h2>Location Notes</h2>
+  <p>Aruba is located in San Francisco. It is a stylish area with upmarket boutiques, restaurants and nightlife, many of San Franciscos most notable restaurants, bars and night clubs are just withinn reach of aruba. It is a 5 minute walk from the Goden Gate bridge. We are surrounded by busy bustling beaches with all the suft you could want.  Just don't forget to look up at the bridge whilst your there.</p>
+</div>
+   
+	<!-- footer starts here --> 
+<div>
+	<div class="footer">
+		<span class="footer-c"><a href="gallery">Gallery</a></span>
+		<span class="footer-c"><a href="booking">Make Booking</a></span>
+		<span class="footer-c"><a href="rooms"> Villas</a></span>
+		<span class="footer-c"><a href="reviews">Reviews</a></span>
+		<span class="footer-c"><a href="location">Location</a></span>
+	</div>
+</div>
+<!-- footer ends here -->
+  
+  
+<!-- JavaScript -->
+  
+<!-- Responsive Nav for mobile devices -->
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,300i,400,400i,600,600i,700i" rel="stylesheet">
+	<link rel="stylesheet" href="static/hotelWebsiteCSS.css">
+	<title>Aruba | Make a Booking with us </title>
+</head>
+<body>
+
+<!--  Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+    </div>
+    <div class="modal-body">
+	<form>
+	<!-- Login form -->
+		<input class="login-input" type = "email" name = "Email" placeholder ="Email Address"/> 
+		<br>
+		<input class="login-input" type = "password" name = "Password" placeholder ="Password"/> 
+	</form>
+    </div>
+    <div style="text-align: center;" class="modal-footer">
+	<!--- submit button for login -->
+      <input class="booking-btn" type = "submit" value = "Log In" >
+    </div>
+  </div>
+</div>
+
+<!-- Navigation Bar starts here-->
+<div>
+	<!-- Aruba logo / website logo-->
+	<a href="/"><img style="margin-top: 18px; float: left !important; height: 27px; width: 75px; margin-left: 20px;" src="static/aruba-logo.png" alt = "Aruba Logo"></a>
+		<div class="topnav" id="myTopnav">
+			<!-- when clicked, activates login form modal -->
+			<a class="btn" id="myBtn" href="#">Log In</a>
+			<a href="location">Location</a>
+			<a href="reviews">Reviews</a>
+			<a href="booking"> Make Booking</a>
+			<a href="rooms">Our Villas</a>
+			<a href="gallery">Gallery</a>
+			<!-- Navigation icon -->
+			<a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+</div>
+<!-- navigation bar ends here -->
+
+
+
+<!-- booking form -->
+<div class="container">
+	<h2> Book a Room </h2>
+	<h5> (Use the arrow on the right to select dates from a calendar.) </h5>
+	<form action = "addBooking" method = "post" name = "bookingForm" onsubmit = "submitFunction" > 
+		<!-- date type inputs -->
+		<h3> Please Enter Check In Date </h3>
+		<input type = "date" name = "indate"/>
+		<h3> Please Enter Check Out Date </h3>
+		<input type = "date" name = "outdate"/>
+		<br>
+		<!-- select type inputs -->
+		<h3> Select your room type </h3>
+		<select name = "room"> 
+			<option value = "2 Bed Villa">2 Bed Villa</option>
+			<option value = "3 Bed Villa">3 Bed Villa</option>
+			<option value = "Premium 2 Bed Villa">Premium 2 Bed Villa</option>
+			<option value = "Premium 3 Bed Villa">Premium 3 Bed Villa</option>
+			<option value = "Family Villa">Family Villa</option>
+		</select>
+		<br>
+		<!-- Number type  inputs -->
+		<h4>Adults</h4>
+		<input type = "number" name = "adults" min="1" max="10" value = "1" />
+		<div>
+		<h4>Children</h4>
+		<input type = "number" name = "children" min="0" max="10" value = "0"/></div>
+		<br>
+		<!-- Text typee inputs -->
+		<input type = "text" name = "Name" placeholder ="Full Name"/> 
+		<!--  Email type inputs -->
+		<input type = "email" name = "Email" placeholder ="Email Address"/> 
+		<br>
+		<!-- Submit button for booking form -->
+		<input class="btn" type = "submit" value = "Book Now" > 
+	</form>
+	
+ 
+</div>
+	
+	
+<!-- Output of review form generated from backend .py file and .csv-->
+<div>
+		<h2 class="text-center"> Current Bookings </h2> 
+	<table class="container"> 
+		{% for line in aFile %} 
+		<tr> 
+			{% for item in line%} 
+				<td>
+				{{item}} 
+				</td> 
+			{% endfor %} 
+		</tr> 
+		{% endfor %}
+	</table>
+</div>
+	
+	<!-- footer starts here --> 
+<div>
+	<div class="footer">
+		<span class="footer-c"><a href="gallery">Gallery</a></span>
+		<span class="footer-c"><a href="rooms"> Villas</a></span>
+		<span class="footer-c"><a href="booking">Make Booking</a></span>
+		<span class="footer-c"><a href="reviews">Reviews</a></span>
+		<span class="footer-c"><a href="location">Location</a></span>
+	</div>
+</div>
+<!-- footer ends here -->
+
+
+<!-- JavaScript -->
+<!-- Responsive Nav for mobile devices -->
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+<!-- Alert for incorrect filled form -->
+function submitFunction(){
+	var x=document.forms["bookingForm"]["Name"].value;
+	var y=document.forms["bookingForm"]["Email"].value;
+	if(x==null||x==""||y==null||y=="")
+	{
+		alert("Not all fields are filled out.")
+	}
+}
+</script>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

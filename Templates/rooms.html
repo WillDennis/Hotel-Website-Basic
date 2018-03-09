@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,300i,400,400i,600,600i,700i" rel="stylesheet">
+	<link rel="stylesheet" href="static/hotelWebsiteCSS.css">
+	<title>Aruba | Gallery </title>
+</head>
+<body>
+
+
+<!--  Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+    </div>
+    <div class="modal-body">
+	<form>
+	<!-- Login form -->
+		<input class="login-input" type = "email" name = "Email" placeholder ="Email Address"/> 
+		<br>
+		<input class="login-input" type = "password" name = "Password" placeholder ="Password"/> 
+	</form>
+    </div>
+    <div style="text-align: center;" class="modal-footer">
+	<!--- submit button for login -->
+      <input class="booking-btn" type = "submit" value = "Log In" >
+    </div>
+  </div>
+</div>
+
+<!-- Navigation Bar starts here-->
+<div>
+	<!-- Aruba logo / website logo-->
+	<a href="/"><img style="margin-top: 18px; float: left !important; height: 27px; width: 75px; margin-left: 20px;" src="static/aruba-logo.png" alt = "Aruba Logo"></a>
+		<div class="topnav" id="myTopnav">
+		<!-- when clicked, activates login form modal -->
+			<a class="btn" id="myBtn" href="#">Log In</a>
+			<a href="location">Location</a>
+			<a href="reviews">Reviews</a>
+			<a href="booking"> Make Booking</a>
+			<a href="rooms">Our Villas</a>
+			<a href="gallery">Gallery</a>
+			<!-- Navigation icon -->
+			<a href="javascript:void(0);" style="font-size:22px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+</div>
+<!-- navigation bar ends here -->
+<h2> View our Villas </h2>
+<!--QuickNav-->
+<div class ="quicknav">
+	<a class = "quicknavoptions" href = "#2bed">2 Bed Villa </a>
+	<a class = "quicknavoptions" href = "#3bed">3 Bed Villa</a>
+	<a class = "quicknavoptions" href = "#pbed">Premium 3 Bed Villa</a>
+	<a class = "quicknavoptions" href = "#fbed">Family Villa </a>
+</div>
+<!--QuickNav End-->
+
+<!-- 2 Bed Villa -->
+<div >
+	<div class="col-6">
+		<img style="width: 90%;" src="static/2bedFloorPlan.jpg" alt ="2bed" >
+		<p class ="container">2 Bedroom Villa Floorplan</p>
+	</div>
+	<div class="col-6 side-para">
+		<h3 id = "2bed">  2 Bed Villa </h3>
+		<p style="margin-left: 30px; text-align: left;">Aruba Villas offers 2 bedroom villas with blissful surroundings to unwind in the comfort of supreme luxury. The villas are stylishly designed with great attention to detail, also ensuring privacy of all guests. The 2 Bedroom Villa is an ideal romantic hide-away or for small families and groups of friends looking for a luxurious getaway. Average size 280sqm <br><br>
+		The two bedroom villas at Aruba Villas have beautifully designed living spaces and bedrooms with all the features of a modern home. The two bedrooms with pastel hues are fully air conditioned, each with an en-suite bathroom. The bathrooms are set in a tropical ambience featuring an outdoor shower and a bathtub.
+		Relax your mind, body and soul amidst the beautiful outdoor features combined with comfortable living spaces. Each villa has a private pool surrounded by sunbeds, perfect for days when you don’t feel like stepping out. <br><br>
+		The two bedroom villas at Aruba Villas have beautifully designed living spaces and bedrooms with all the features of a modern home.
+		Relax in your private lounge area that includes an air-conditioned media room (in premium villa only) furnished in the most chic Asian style. There is ample space for everyone to relax quietly, or gather together for meals and games.
+		If you enjoy cooking, whip up a feast using the fully self-contained kitchen boasting the highest quality appliances.
+		Unwind by the 11 metre turquoise swimming pool flanked by lush grass, gardens & Zen water features. The villa staff will be happy to make arrangements for a special evening under the stars. 
+		</p>
+	</div>
+	
+</div>
+<!-- 2 Bed Villa ends here-->
+
+<!-- 3 Bed Villa -->
+<div>
+	<div class="col-6">
+		<img style="width: 90%;" src="static/3bedFloorPlan.jpg" alt ="3bed" >
+		<p class ="container">3 Bedroom Villa Floorplan</p>
+	</div>
+	<div class="col-6 side-para">
+		<h3 id = "3bed">  3 Bed Villa </h3>
+		<p style="margin-left: 30px; text-align: left;">Aruba Villas offers 3 bedroom villas in San Francisco perfectly sized for two small families, one large family or a group of friends and couples. Or, give yourself space to relax with a spare room set up for massages. Average size 580sqm <br><br>
+		The 3 spacious air-conditioned bedrooms have king size beds and a garden ensuites featuring a rain shower and a deep soak bathtub. All villas have un-limited wi-fi and a phone fitted a local SIM card.<br><br>
+		The open-air living pavilions contain huge dining tables designed for delicious dinners seating 10 people and relaxed bbq’s. Each villa has a fully equipped kitchen with modern appliances such as full sized fridge and a Nespresso machine.<br><br>
+		There is ample space for everyone to relax or socialise at Aruba Villas. Offering the best of San Francisco, the outdoor features are designed for guests to relax and unwind in the privacy of their own villa.
+		Each villa has a private pool, a pool bale and sunbeds with the serene ambience of lush grass, gardens & Zen water features. The beautiful outdoor features combined with comfortable living spaces make every effort to relax you mind, body and soul.<br><br>
+		Lose yourself in the imaginary world of your favourite novel or enjoy some tropical cocktails with your partner. Our villa staff will be happy to make special arrangements during your stay.
+		</p>
+	</div>
+	
+</div>
+<!-- 3 Bed Villa ends here-->
+<!-- 3 Bed Premium Villa -->
+<div >
+	<div class="col-6">
+		<img style="width: 90%;" src="static/3bedP.jpg" alt ="3bedpremium" >
+		<p class ="container">3 Bedroom Premium Villa Floorplan</p>
+	</div>
+	<div class="col-6 side-para">
+		<h3 id = "pbed"> Premium 3 Bed Villa </h3>
+		<p style="margin-left: 30px; text-align: left;">
+		Our premium villas at Aruba are all about space, seclusion and privacy. They offer a spectacular ambience to escape the crowd and recharge your senses in a tropical Asian setting. Our premium villas are nicely appointed, with gourmet kitchens, lush living rooms, and opulent bedrooms and baths.<br><br>
+		The villa itself offers an open concept living space where you have your own private garden and a private pool as the centre piece. The open-air living pavilion features a kitchen equipped with a full sized fridge and a Nespresso machine on an Island counter. Lounge areas include an air-conditioned media room. At Aruba, you have a team of professional staff at your service to anticipate and take care of all your needs.
+		You can choose to have meals prepared by a professional chef, be chauffeured around in a private vehicle or indulge in an in-house spa treatment within the privacy of your private garden. You also have ample space to entertain a small gathering of friends or alternatively hide away from the outside world in your private retreat.<br><br>
+		Though San Francisco boasts of great restaurants and cafes at walking distance from your villa, but what about days when you don’t feel like venturing out of your private cocoon? The villa features a dining room and the staff are more than happy to arrange for your meals to be served there. You can also choose to dine by the pool on the lush lawns of the villa.
+		</p>
+	</div>
+	
+</div>
+<!-- 3 Bed Premium Villa ends here-->
+<!-- Family Villa -->
+<div >
+	<div class="col-6">
+		<img style="width: 90%;" src="static/familyPlan.jpg" alt ="family villa floorplan" >
+		<p class ="container">Family Villa Floorplan</p>
+	</div>
+	<div class="col-6 side-para">
+		<h3 id = "fbed"> Family Villa </h3>
+		<p style="margin-left: 30px; text-align: left;">
+		Our family villas at Aruba offer all all the comforts of home with luxury in mind. Family villas are nicely appointed, with fully equipped kitchens, 
+		stylish open plan living rooms, and opulent bedrooms and baths. It’s the perfect setting for privacy, space and freedom all while you’re away in a tropical paradise.<br><br>
+		Aruba Villas offers two bedroom and three bedroom family villas, fully equipped to ensure comfort for the whole family. 
+		The open-air living pavilions feature huge dining tables designed for delicious dinners seating 10 people. 
+		They also have a bbq. A separate living pavilion hosts 3 spacious air-conditioned bedrooms with ensuite indoor, outdoor garden bathrooms complete with deep baths.</p>
+	</div>
+	
+</div>
+<!-- Family Villa ends here-->
+<!-- footer starts here --> 
+<div>
+	<div class="footer">
+		<span class="footer-c"><a href="gallery">Gallery</a></span>
+		<span class="footer-c"><a href="rooms"> Villas</a></span>
+		<span class="footer-c"><a href="booking">Make Booking</a></span>
+		<span class="footer-c"><a href="reviews">Reviews</a></span>
+		<span class="footer-c"><a href="location">Location</a></span>
+	</div>
+</div>
+<!-- footer ends here -->
+
+<!-- JavaScript -->
+
+<!-- Responsive Nav for mobile devices -->
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+</body>
+</html>
